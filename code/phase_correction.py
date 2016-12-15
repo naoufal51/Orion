@@ -1,5 +1,12 @@
 from csi_matrix import *
+"""
+phase_correction.py
 
+Simple Phase correction for one subcarrier (For the expample)
+
+Naoufal Mahfoudi (c) 2016 mohamed-naoufal.mahfoudi@inria.fr
+
+"""
 def phase_correction(csi_corr, csi_target):
     csi_cr = csi_matrix(csi_corr)
     csi_tr = csi_matrix(csi_target)

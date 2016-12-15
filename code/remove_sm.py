@@ -1,5 +1,4 @@
 from sm_matrices import *
-
 def remove_sm(csi, rate):
     m = np.size(csi, 0)
     n = np.size(csi, 1)

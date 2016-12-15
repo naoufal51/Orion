@@ -1,3 +1,11 @@
+"""
+hampel.py
+
+Outlier detection.
+
+Naoufal Mahfoudi (c) 2016 mohamed-naoufal.mahfoudi@inria.fr
+
+"""
 from music import *
 
 def hampel(data, m=2.):

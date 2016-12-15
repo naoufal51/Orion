@@ -1,3 +1,11 @@
+"""
+sm_matrices.py
+
+sm matrices used by the intel 5300 agn
+
+Naoufal Mahfoudi (c) 2016 mohamed-naoufal.mahfoudi@inria.fr
+
+"""
 import numpy as np
 
 sm_1 = 1

@@ -2,7 +2,14 @@ from remove_sm import *
 from read_from_file import *
 import numpy as npd
 import sys
+"""
+csi_matrix.py
 
+Read Csi matrix and apply some corrections
+
+Naoufal Mahfoudi (c) 2016 mohamed-naoufal.mahfoudi@inria.fr
+
+"""
 triangle = [1, 3, 6]
 broken_perm = 0
 
@@ -28,6 +35,5 @@ def csi_matrix(csi):
             c[i].csi=np.array(c[i].csi)
             csio[:, :, :]=(c[i].csi)[:,perm-1,:]
             ret = remove_sm(npd.transpose(csio), c[i].rate)
-            # ret=npd.transpose(c[i].csi)
             op[:, :, :, i] = ret
     return op
