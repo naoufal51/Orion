@@ -1,7 +1,8 @@
-from remove_sm import *
-from read_from_file import *
 import numpy as npd
-import sys
+
+from read_from_file import *
+from remove_sm import *
+
 """
 csi_matrix.py
 
@@ -13,8 +14,18 @@ Naoufal Mahfoudi (c) 2016 mohamed-naoufal.mahfoudi@inria.fr
 triangle = [1, 3, 6]
 broken_perm = 0
 
-
 def csi_matrix(csi):
+
+    """csi_matrix, reads the csi matrix , removes the spatial mapping,
+    and stores it in a 'processing friendly' array.
+
+        Args:
+            csi: filename of raw csi data file.
+
+        Returns:
+            array containing the processed csi matrix.
+
+       """
     filename = csi
     c = read_from_file(filename)
     csio = npd.zeros((30,3,2), dtype=complex)

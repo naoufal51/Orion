@@ -1,8 +1,5 @@
-import numpy as np
 from scipy.ndimage.filters import maximum_filter
 from scipy.ndimage.morphology import generate_binary_structure, binary_erosion
-import matplotlib.pyplot as pp
-from itertools import compress
 
 
 def detect_peaks(image):

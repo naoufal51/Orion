@@ -1,4 +1,5 @@
 from csi_matrix import *
+
 """
 phase_correction.py
 
@@ -7,7 +8,10 @@ Simple Phase correction for one subcarrier (For the expample)
 Naoufal Mahfoudi (c) 2016 mohamed-naoufal.mahfoudi@inria.fr
 
 """
+
+
 def phase_correction(csi_corr, csi_target):
+
     csi_cr = csi_matrix(csi_corr)
     csi_tr = csi_matrix(csi_target)
 
@@ -18,9 +22,8 @@ def phase_correction(csi_corr, csi_target):
     rl_doa2 = np.angle(csi_cr[0, 0, 0, 0] * np.conjugate(csi_cr[0, 1, 0, 0]))
     rl_doa3 = np.angle(csi_cr[0, 0, 0, 0] * np.conjugate(csi_cr[0, 2, 0, 0]))
 
-    csi_tro=np.zeros((2, 3,1,np.size(csi_tr, 3)), dtype=complex)
+    csi_tro = np.zeros((2, 3, 1, np.size(csi_tr, 3)), dtype=complex)
     for k in range(0, np.size(csi_tr, 3) - 1):
-
         csi_tro[0, 0, 0, k] = csi_tr[0, 0, 0, k]
         csi_tro[0, 1, 0, k] = csi_tr[0, 1, 0, k]
         csi_tro[0, 2, 0, k] = csi_tr[0, 2, 0, k]
