@@ -70,7 +70,7 @@ music(csi_corr, csi_target, 2, 3, 0.5, 0.5,640)
 ```
 
 
-![png](output_6_0.png)
+![png](/code/img/output_6_0.png)
 
 
 
@@ -111,11 +111,11 @@ for i in range(1900):
 ```
 
 
-![png](output_7_0.png)
+![png](/code/img/output_7_0.png)
 
 
 
-![png](output_7_1.png)
+![png](/code/img/output_7_1.png)
 
 
 
@@ -157,7 +157,7 @@ plt.show()
 ```
 
 
-![png](output_12_0.png)
+![png](/code/img/output_12_0.png)
 
 
 
@@ -194,10 +194,8 @@ plt.show()
 ```
 
 
-![png](output_13_0.png)
+![png](/code/img/output_13_0.png)
 
 
 And so after applying a hampel oultlier detector and a kalman filter on a our estimated data we have clearly less noise an an overall better accuracy.
 
-To have acess to this notebook and the code used in this example please check the following link:
-https://github.com/naoufal51/Orion
