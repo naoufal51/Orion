@@ -6,7 +6,7 @@ Link:http://mybinder.org
 
 # ORION Orientation Estimation Using Commodity Wi-Fi
 
-<img src="exp_setup.jpg" alt="Drawing" height="300px">
+<img src="/code/img/exp_setup.jpg" alt="Drawing" height="300px">
 
 ## Implementation 
 
@@ -56,7 +56,7 @@ We  jointly estimate AoA and AoD using a 2D music algorithm on phase corrected C
 
 The figure shown below represent the vaules computed for the pseudo-spectrum. The peak represent the AoA and AoD estimate:
 
-<img src="dod-doa.png" alt="Drawing" height="200"/>
+<img src="/code/img/dod-doa.png" alt="Drawing" height="200"/>
 
 
 ```python
