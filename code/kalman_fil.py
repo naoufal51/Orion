@@ -18,7 +18,7 @@ def kalman_fil(csv):
 
       Returns:
         array of filter DoA estimations.
-        array of filter DoD estimations
+        array of filter DoD estimations.
 
       """
     df = pd.read_csv(csv, sep=',', header=None)
@@ -70,4 +70,4 @@ def kalman_fil(csv):
         '''Storing Stage'''
         DOA[t] = (pos_estimate[0, 0])
         DOD[t] = (pos_estimate[0, 1])
-    return DOA, DOD
+    return DOA, DOD, angles1, angles2
