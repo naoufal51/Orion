@@ -1,5 +1,4 @@
-"""
-sm_matrices.py
+"""sm_matrices.py
 
 sm matrices used by the intel 5300 agn
 

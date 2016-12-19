@@ -1,5 +1,4 @@
-"""
-kalman_fil.py
+"""kalman_fil.py
 
 Classic Kalman filter for statistical noise mitigation.
 
@@ -27,22 +26,23 @@ def kalman_fil(csv):
     angles1 = hampel(angles[0, :], m=2)
     angles2 = hampel(angles[1, :], m=2)
 
-    dt = 1
-    u = .005
-    Accl_noise = 0.009
-    Tz = matrix([[1, 0],
-                 [0, 1]])
-    Tx = matrix([[dt ** 4 / 4, 0, dt ** 3 / 2, 0],
-                 [0, dt ** 4 / 4, 0, dt ** 3 / 2],
-                 [dt ** 3 / 2, 0, dt ** 2, 0],
-                 [0, dt ** 3 / 2, 0, dt ** 2]]) * Accl_noise ** 2
-    P = Tx
+    dt = 0.1
+
     A = matrix([[1, 0, dt, 0],
                 [0, 1, 0, dt],
                 [0, 0, 1, 0],
                 [0, 0, 0, 1]])
     B = matrix([[(dt ** 2 / 2)], [(dt ** 2 / 2)], [dt], [dt]])
+    u = .005
     H = matrix([[1, 0, 0, 0], [0, 1, 0, 0]])
+    Tz = matrix([[1, 0],
+                 [0, 1]])
+    Acc_ns = 0.03
+    Tx = matrix([[dt ** 4 / 4, 0, dt ** 3 / 2, 0],
+                 [0, dt ** 4 / 4, 0, dt ** 3 / 2],
+                 [dt ** 3 / 2, 0, dt ** 2, 0],
+                 [0, dt ** 3 / 2, 0, dt ** 2]]) * Acc_ns ** 2
+    P = Tx
 
     pos_estimate = matrix([[angles[0, 0]], [angles[1, 0]], [0], [0]])
     pos_loc_meas_p = np.zeros((2, size(angles, 1)))

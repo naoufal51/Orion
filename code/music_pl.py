@@ -1,7 +1,9 @@
-"""
-music_pl.py
+"""music_pl.py
+
 Joint AoD AoA estimation using 2D music Algorithm
+
 Naoufal Mahfoudi (c) 2016 mohamed-naoufal.mahfoudi@inria.fr
+
 """
 from numpy import linalg as ln
 from numpy import *

@@ -1,5 +1,4 @@
-"""
-music.py
+"""music.py
 
 Joint AoD AoA estimation using 2D music Algorithm
 using raw.dat file as Input
