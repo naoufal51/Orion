@@ -27,9 +27,9 @@ def kalman_fil(csv):
     angles1 = hampel(angles[0, :], m=2)
     angles2 = hampel(angles[1, :], m=2)
 
-    dt = 1
+    dt = 0.1
     u = .005
-    Accl_noise = 0.009
+    Accl_noise = 0.03
     Tz = matrix([[1, 0],
                  [0, 1]])
     Tx = matrix([[dt ** 4 / 4, 0, dt ** 3 / 2, 0],
@@ -70,4 +70,4 @@ def kalman_fil(csv):
         '''Storing Stage'''
         DOA[t] = (pos_estimate[0, 0])
         DOD[t] = (pos_estimate[0, 1])
-    return DOA, DOD
+    return DOA, DOD,angles1,angles2
