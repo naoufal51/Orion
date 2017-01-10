@@ -1,8 +1,8 @@
 ![ScreenShot](https://cloud.githubusercontent.com/assets/15954923/21268015/28638b76-c3ad-11e6-89d5-6096e56f924a.png)
 # Orion
-In order to run the notebook showcasing the work use mybinder. Copy and paste the repository link into the appriate field present in the
-Link: http://mybinder.org
-Or clone the repository and use jupyter on you local machine for launching the notebook present in the code folder.
+In order to run the notebook showcasing the python version (partial) of the code used for the experiments, please use mybinder Or clone the repository and use jupyter on you local machine for launching the notebook present in the code folder. 
+If you choose to use mybinder, you should copy and paste the repository link into the appropriate field present in home page of the website: http://mybinder.org, 
+
 
 
 # ORION Orientation Estimation Using Commodity Wi-Fi
