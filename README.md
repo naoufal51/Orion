@@ -140,7 +140,7 @@ df.to_csv("exp_meas3.csv",header=None)
 
 ###  Smoothing Angle Estimations
 
-As show in the figure above, the estimates are jittery  with a strong presence of outliers.Thus, in order to smoothen our estimates, we apply an outlier detector on the measurement data before using a kalman filter to  mitigate the statistical noise.
+As shown in the figure above, the estimates are jittery  with a strong presence of outliers.Thus, in order to smoothen our estimates, we apply an outlier detector on the measurement data before using a Kalman filter to  mitigate the statistical noise.
 
 
 ```python
