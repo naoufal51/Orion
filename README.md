@@ -1,7 +1,6 @@
 ![ScreenShot](https://cloud.githubusercontent.com/assets/15954923/21268015/28638b76-c3ad-11e6-89d5-6096e56f924a.png)
 # Orion
-In order to run the notebook showcasing the python version (partial) of the code used for the experiments, please use mybinder Or clone the repository and use jupyter on you local machine for launching the notebook present in the code folder. 
-If you choose to use mybinder, you should copy and paste the repository link into the appropriate field present in home page of the website: http://mybinder.org.
+In order to run the notebook showcasing the python version (partial) of the code used for the experiments, please use mybinder or clone the repository and use jupyter on you local machine for launching the notebook present in the code folder. If you choose to use mybinder, you should copy and paste the repository link into the appropriate field present in home page of the website: http://mybinder.org.
 
 
 # ORION Orientation Estimation Using Commodity Wi-Fi
@@ -11,10 +10,10 @@ If you choose to use mybinder, you should copy and paste the repository link int
 ## Implementation 
 
 ###  Experimentation Setup
-We have implemented the system using the Intel Wi-Fi Link 5300 NICs. The firmware of this COTS Wi- Fi card was modified in order to extract the CSI matrices through the Intel CSI tool for 802.11n HT packets . In case of OFDM systems, as for instance Wi- Fi, we are able to extract a CSI matrix for each sub-carrier. In our case the Wireless NIC offers up to 30 subcarriers. We use the 5 GHz band with 20MHz of bandwidth. 
-We set up our wireless cards in the injection mode, which avoids the need of association with an AP and allows raw Wi-Fi packets transmission. 
+We have implemented the system using the Intel Wi-Fi Link 5300 NICs. Indeed, we have used the 533AN_MMW (Full) model with the following SPS references: 480986-0001 0E, 506679-001 0B, 480986-0010A. The firmware of this COTS Wi- Fi card was modified in order to extract the CSI matrices through the Intel CSI tool for 802.11n HT packets. In case of OFDM systems, as for instance Wi-Fi, we are able to extract a CSI matrix for each sub-carrier. In our case the Wireless NIC offers up to 30 subcarriers. We use the 5 GHz band with 20MHz of bandwidth. We set up our wireless cards in the injection mode, which avoids the need of association with an AP and allows raw Wi-Fi packets transmission.
 
-We setup two unifom linear antenna arrays. We use a classical 5dBi ominidirectional compatible with 2.4 GHz as well as the 5GHz band. As we are using the 5.32 GHz band for our system, we respect a 2.8cm of inter-antenna spacing, which corresponds to half the wavelength. These ULAs are connected to the terminal through extension cables in order to have liberty of movement, which is essential for our experimentation. The cables are 3 meters long and compatible with both the Wi-Fi bands with a 2dB signal attenuation for 2.4 GHz band. 
+We setup two uniform linear antenna arrays. We use a classical 5dBi omnidirectional compatible with 2.4 GHz as well as the 5GHz band. As we are using the 5.32 GHz band for our system, we respect a 2.8cm of inter-antenna spacing, which corresponds to half the wavelength. These ULAs are connected to the terminal through extension cables in order to have liberty of movement, which is essential for our experimentation. The cables are 3 meters long and compatible with both the Wi-Fi bands with 2dB signal attenuation for 2.4 GHz band.
+ 
 
 ###  Wireless Card Configuration
 The transmission is controlled by disabling the antenna selection algorithm and by specifying the desired number of antennas, streams and transmission technique (SM). The rotation is performed using extension cables that connect the coplanar transmitter and receiver antenna arrays to the access points.
