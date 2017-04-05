@@ -199,4 +199,4 @@ plt.show()
 ![png](/code/img/output_13_0.png)
 
 
-So after applying an outlier removal using a Hampel identifier and a Kalman filter on our estimated data we have significantly decreased the noise and increase the overall accuracy.
+So after applying an outlier removal using a Hampel identifier and a Kalman filter on our estimated data we have significantly decreased the noise and increased the overall accuracy.
