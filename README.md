@@ -2,6 +2,7 @@
 # Orion
 In order to run the notebook showcasing the python version (partial) of the code used for the experiments, please use mybinder or clone the repository and use jupyter on you local machine for launching the notebook present in the code folder. If you choose to use mybinder, you should copy and paste the repository link into the appropriate field present in home page of the website: http://mybinder.org.
 
+We also provide code for CSI measurement using the experiment orchestration tool nepi-ng. It allows configuring the R2lab wireless nodes, run a transmission scenario between a transmitter and a receiver, and collect the CSI logs for angle of arrival (AoA) estimation. This code is tunable for more sophisticated transmission scenarios, for instance the usage of spatial multiplexing. https://github.com/parmentelat/r2lab/tree/public/demos. There is also an explanatory video for running an AoA experiment scenario https://r2lab.inria.fr/tuto-900-youtube.md#AOA.
 
 # ORION Orientation Estimation Using Commodity Wi-Fi
 
@@ -46,6 +47,8 @@ For further details check:
 https://github.com/dhalperi/linux-80211n-csitool/blob/csitool-3.13/drivers/net/wireless/iwlwifi/dvm/commands.h#L245-L334
 
 For the transmission we choose the injection mode based on lorcon-old. Lorcon, which stands for Loss Of Radio CONnectivity is library for injecting 802.11 frames https://github.com/dhalperi/lorcon-old.
+
+If you choose to use nepi-ng for running your experiment, you should apply an appropriate rate index in https://github.com/parmentelat/r2lab/blob/public/demos/jobs-angle-measure/angle-measure.sh#L128-L134
 
 ## Joint Angle of arrival Angle of Departure Estimation
 
