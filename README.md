@@ -6,6 +6,8 @@ We also provide code for CSI measurement using the experiment orchestration tool
 
 # ORION Orientation Estimation Using Commodity Wi-Fi
 
+With MIMO, Wi-Fi led the way to the adoption of antenna array signal processing techniques for fine-grained localization using commodity hardware. MIMO techniques, previously exclusive to specific domains of applications for instance radar systems, allow to consider estimating the orientation in space of a device equipped with COTS Wi-Fi chip. In fact, the availability channel state information measurement in recent Wi-Fi chips, makes it a candidate readily available for experimentation. Accordingly, we propose the ORION system to estimate the orientation (heading and yaw) of a MIMO Wi-Fi equipped object, relying on a joint estimation of the angle of arrival and the angle of departure.
+
 <img src="/code/img/exp_setup2.jpg" alt="Drawing" height="400px">
 
 ## Implementation 
