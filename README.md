@@ -6,7 +6,7 @@ We also provide code for CSI measurement using the experiment orchestration tool
 
 # ORION Orientation Estimation Using Commodity Wi-Fi
 
-<img src="/code/img/exp_setup2.jpg" alt="Drawing" height="900px">
+<img src="/code/img/exp_setup2.jpg" alt="Drawing" height="600px">
 
 ## Implementation 
 
