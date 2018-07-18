@@ -56,8 +56,8 @@ If you choose to use nepi-ng for running your experiment, you should apply an ap
 For phase correction, we propose the code for a basic version of the phase correction proposed in the paper. 
 With the initial position (csi_corr.dat) being the reference and then remove the phase bias from the following measurements that are collectected (csi_target.dat).
 This is possible because:
-*The RF oscillator offset is fixed as long as you do not reset your card.
-*The phase shift applied by CSD is fixed as the delay between the streams that are sent are specified by the 802.11n draft.
+* The RF oscillator offset is fixed as long as you do not reset your card.
+* The phase shift applied by CSD is fixed as the delay between the streams that are sent are specified by the 802.11n draft.
 Be aware that everytime you reset your card you need a new reference for correcting the RF oscillator offset.
 
 ## Joint Angle of arrival Angle of Departure Estimation
