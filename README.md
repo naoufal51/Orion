@@ -52,6 +52,9 @@ For the transmission we choose the injection mode based on lorcon-old. Lorcon, w
 
 If you choose to use nepi-ng for running your experiment, you should apply an appropriate rate index in https://github.com/parmentelat/r2lab/blob/public/demos/jobs-angle-measure/angle-measure.sh#L128-L134
 
+For phase correction, We propose the code for a basic version of the phase correction proposed in the paper. 
+With the initial position (csi_corr.dat) being the reference and then remove the phase bias from the following measurements that are collectected (csi_target.dat)
+
 ## Joint Angle of arrival Angle of Departure Estimation
 
 
